@@ -36,7 +36,7 @@ msfvenom, pattern_create, and pattern_offset
 ___________________________________________________
 
 Modules:
-Auxillary - scanners, crawlers, fuzzers
+Auxiliary - scanners, crawlers, fuzzers
 Encoders - Allows you to encode the exploit and payload in the hopes that a signature-based antivirus solution may miss them
 Evasion - Modules that will attempt to evade detection of antivirus solutions
 Exploits - expoits, organised by target system
@@ -60,7 +60,22 @@ Useful commands:
 - use (module) eg. use exploit/windows/smb/ms17_010_eternalblue
 - show (options, payloads, auzillary,)
 - back
-- info
-- search eg. (search ms17-010
+- info (module name)
+- search eg. (search ms17-010)
+- search type:auxiliary telnet - Search specific types of modules
+
+___________________________________________________
 
 
+Working with Modules:
+
+After tnering the context of a module after the "use" command followed by the module name we will need to set parameters.
+We can use the "show options" command to list required parameters
+All parameters are set using the same command syntax: set PARAMETER_NAME VALUE
+
+Keep an eye on what command prompt we are in. Eg
+- Regualr Command Prompt, no metasploit commands will work until we enter msfconsole
+- msf, metasploit commands will work
+- msf exploit(windows/smb/ms17_010_eternalblue), context specific commands only work
+- meterpreter, meterpreter only commands here, an important payload connection
+Once a meterpreter exploit is complete we can launch a shell on the target system which will allow us to run regular commands
