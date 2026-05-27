@@ -1,1 +1,13 @@
+01 - Basics
+Exploring the basic foundations of Metasploit
+Looked at different modules, commands, and how to navigate different modules. How to execute commands correctly in the metasploit framework eg. using modules, setting rhosts and rports etc
+
+02 - Exploitation
+Diving dseeper into scanning, exploiting, databases, and delivering payloads.
+Expanded on scanning options, practiced some workflows in terminal / msfconsole
+Demonstrated ability to exploit a machine and using meterpreter to gain flag and hasdumps
+Created a payload and transfered it from attacking machine to target machine, executed it, and returned multiple user password hashes
+
+03 - Meterpreter
+
 
