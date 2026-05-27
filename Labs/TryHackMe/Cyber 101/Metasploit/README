@@ -17,4 +17,14 @@ An in-depth look at Meterpreter. The different useful commands we can use.
 - Converted hash to cleartext password of user
 - Used search to find 2 secret files that contained sensitive information
 
+04 - Blue
+Using eternalblue exploit to gain access to sensitivbe information on a target machine
+- Conducted Recon on the machine. Scanning for vulnerabilities
+- Gain access to machine exploiting the ms17-010 vulnerability
+- Escalated access by creating a shell to meterpreter session and migrating to an authority ran process
+- Conducting a hashdump and cracking hash password to text
+- Using shell, navigated around system to find 3 difffernt flags
+
+
+
 
