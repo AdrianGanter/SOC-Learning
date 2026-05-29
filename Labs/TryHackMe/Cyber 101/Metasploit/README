@@ -1,30 +1,77 @@
-01 - Basics
-Exploring the basic foundations of Metasploit
-Looked at different modules, commands, and how to navigate different modules. How to execute commands correctly in the metasploit framework eg. using modules, setting rhosts and rports etc
+# Metasploit Learning Overview (TryHackMe)
 
-02 - Exploitation
-Diving dseeper into scanning, exploiting, databases, and delivering payloads.
-Expanded on scanning options, practiced some workflows in terminal / msfconsole
-Demonstrated ability to exploit a machine and using meterpreter to gain flag and hasdumps
-Created a payload and transfered it from attacking machine to target machine, executed it, and returned multiple user password hashes
+A structured summary of the four Metasploit modules completed on TryHackMe, covering foundational concepts, exploitation workflows, post‑exploitation, and a real‑world vulnerability (MS17‑010).
 
-03 - Meterpreter
-An in-depth look at Meterpreter. The different useful commands we can use.
-- Successfully exploited a virtual machine
-- Checked machine system info
-- Checked the shares, backgrounding session and using enum_shares module
-- Identified PID and migrated to another PID. Hashdump revelaed NTLM hash of a user
-- Converted hash to cleartext password of user
-- Used search to find 2 secret files that contained sensitive information
+---
 
-04 - Blue
-Using eternalblue exploit to gain access to sensitivbe information on a target machine
-- Conducted Recon on the machine. Scanning for vulnerabilities
-- Gain access to machine exploiting the ms17-010 vulnerability
-- Escalated access by creating a shell to meterpreter session and migrating to an authority ran process
-- Conducting a hashdump and cracking hash password to text
-- Using shell, navigated around system to find 3 difffernt flags
+## 01 — Basics
 
+### Overview
+Exploring the foundational components of the Metasploit Framework.
 
+### Key Concepts Learned
+- Understanding module types (auxiliary, exploit, post, payloads)
+- Navigating modules using `search`, `use`, `info`
+- Setting required options such as `RHOSTS`, `RPORT`, and payloads
+- Executing modules correctly and validating results
 
+### Outcome
+Developed confidence in navigating Metasploit, configuring modules, and running basic exploitation workflows.
 
+---
+
+## 02 — Exploitation
+
+### Overview
+Diving deeper into scanning, exploitation, databases, and payload delivery.
+
+### Hands‑On Skills
+- Using Metasploit’s built‑in scanners and auxiliary modules
+- Running exploitation workflows in `msfconsole`
+- Successfully exploiting a target machine and obtaining a Meterpreter session
+- Performing `hashdump` and retrieving user credentials
+- Creating a payload, transferring it to a target, executing it, and capturing multiple password hashes
+
+### Outcome
+Demonstrated a full exploitation chain from recon → exploit → post‑exploitation → credential extraction.
+
+---
+
+## 03 — Meterpreter
+
+### Overview
+An in‑depth look at Meterpreter and its post‑exploitation capabilities.
+
+### Hands‑On Actions
+- Exploited a VM and established a Meterpreter session
+- Gathered system information and enumerated shares
+- Backgrounded the session and used `enum_shares`
+- Identified a process ID and migrated to a stable process
+- Performed `hashdump` and cracked NTLM hashes to plaintext
+- Used `search` to locate sensitive files and extract their contents
+
+### Outcome
+Gained strong familiarity with Meterpreter commands, privilege escalation, and post‑exploitation techniques.
+
+---
+
+## 04 — Blue (MS17‑010 / EternalBlue)
+
+### Overview
+Using the EternalBlue exploit to gain access to a vulnerable Windows machine.
+
+### What Was Completed
+- Conducted recon and vulnerability scanning
+- Exploited MS17‑010 to gain system‑level access
+- Upgraded shell to Meterpreter and migrated to an authority‑level process
+- Performed `hashdump` and cracked credentials
+- Navigated the system to locate and extract three different flags
+
+### Outcome
+Successfully executed a real‑world exploit chain and demonstrated post‑exploitation skills on a Windows target.
+
+---
+
+## Why This Structure Works
+- Each section has its own detailed file for deep dives  
+- This overview README gives recruiters
