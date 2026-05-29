@@ -163,3 +163,40 @@ Used in methods like **POST** and **PUT** when sending data to the server.
 
 **Which status code means the resource could not be found?**  
 - **404**
+
+---
+
+## **HTTP Response Headers & Response Body (Short Notes)**
+
+### **Response Headers**
+Key–value pairs sent by the server to give the client instructions about how to handle the response.
+
+### **Required Response Headers**
+- **Date** – When the server generated the response.
+- **Content-Type** – Format of the returned data (HTML, JSON, etc.) + character set.
+- **Server** – Server software handling the request (often removed to avoid leaking info).
+
+### **Other Common Response Headers**
+- **Set-Cookie** – Sends cookies to the client.  
+  - Use **Secure** (HTTPS only)  
+  - Use **HttpOnly** (not accessible via JavaScript)
+- **Cache-Control** – Controls caching behaviour (e.g., `max-age`, `no-cache`).
+- **Location** – Used in redirects (3xx) to tell the client where to go next.
+
+### **Response Body**
+- Contains the actual returned data (HTML, JSON, images, etc.).
+- Must be sanitised/escaped to prevent XSS and other injection attacks.
+
+---
+
+## TryHackMe Quiz
+
+**Which response header can reveal server software and version?**  
+- **Server**
+
+**Which cookie flag ensures cookies are only sent over HTTPS?**  
+- **Secure**
+
+**Which cookie flag prevents JavaScript from accessing cookies?**  
+- **HttpOnly**
+
