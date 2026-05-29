@@ -51,6 +51,9 @@
 - **Empty Line** – Separates headers from the body.
 - **Body** – Actual data (form inputs in requests, webpage/API data in responses).
 
+<img width="1140" height="600" alt="image" src="https://github.com/user-attachments/assets/e4526530-d291-4d88-b168-93c41002725e" />
+
+
 ### **Why It Matters**
 - Core of how web apps communicate.
 - Helps diagnose web issues and improve reliability.
