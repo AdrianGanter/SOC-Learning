@@ -1,4 +1,4 @@
-## Web Application Basics – Section 1
+## Web Application Basics
 
 ### **Front End (What the user sees)**
 - **HTML** – Page structure (the “planet surface”).
