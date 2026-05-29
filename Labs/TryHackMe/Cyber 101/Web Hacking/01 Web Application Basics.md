@@ -9,6 +9,7 @@
 - **Infrastructure** – Servers, networks, storage (roads, cars, fuel running the system).
 - **WAF** – Security layer protecting the app (like an atmosphere blocking harmful rays).
 
+---
 
 ### **Anatomy of a URL (Short Summary)**
 - **Scheme** – Protocol used (HTTP/HTTPS). HTTPS encrypts and is the secure default.
