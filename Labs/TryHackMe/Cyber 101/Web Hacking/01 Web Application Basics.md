@@ -202,3 +202,60 @@ Key–value pairs sent by the server to give the client instructions about how t
 **Which cookie flag prevents JavaScript from accessing cookies?**  
 - **HttpOnly**
 
+---
+
+## **Security Headers**
+
+HTTP Security Headers strengthen a web application's defence against attacks such as XSS, clickjacking, and data leakage.
+
+---
+
+### **Content-Security-Policy (CSP)**
+Defines which content sources are allowed, helping prevent **XSS**.
+
+- **default-src** – Default allowed sources (e.g., `'self'`).
+- **script-src** – Allowed locations for JavaScript.
+- **style-src** – Allowed locations for CSS.
+
+---
+
+### **Strict-Transport-Security (HSTS)**
+Forces browsers to always use **HTTPS**.
+
+- **max-age** – Duration the rule stays active.
+- **includeSubDomains** – Applies HTTPS enforcement to all subdomains.
+- **preload** – Adds the site to browser preload lists.
+
+---
+
+### **X-Content-Type-Options**
+Prevents MIME type sniffing.
+
+- **nosniff** – Browser must use the declared Content-Type only.
+
+---
+
+### **Referrer-Policy**
+Controls how much referrer information is shared when navigating between pages.
+
+- **no-referrer** – Sends no referrer data.
+- **same-origin** – Sends referrer only within the same site.
+- **strict-origin** – Sends only the origin when HTTPS → HTTPS.
+- **strict-origin-when-cross-origin** – Full referrer for same-origin; origin-only for cross-origin.
+
+---
+
+## TryHackMe Quiz
+
+**Which CSP property defines where scripts can load from?**  
+- **script-src**
+
+**Which HSTS directive enforces HTTPS on all subdomains?**  
+- **includeSubDomains**
+
+**Which directive prevents MIME type sniffing?**  
+- **nosniff**
+
+
+
+
