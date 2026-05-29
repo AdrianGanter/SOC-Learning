@@ -256,6 +256,10 @@ Controls how much referrer information is shared when navigating between pages.
 **Which directive prevents MIME type sniffing?**  
 - **nosniff**
 
+---
+## Practical Task: Making a HTTP Request
+
+<img width="1900" height="1016" alt="image" src="https://github.com/user-attachments/assets/fd78d6c2-6e4c-4e57-b4be-bd6f5883df92" />
 
 
 
